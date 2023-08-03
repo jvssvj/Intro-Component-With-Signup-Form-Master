@@ -1,0 +1,84 @@
+@media (max-width: 1115px) {
+    main {
+        flex-direction: column;
+    }
+
+    .title-content {
+        margin: 0;
+        text-align: center;
+    }
+
+    .title-content p {
+        margin-bottom: 1em;
+    }
+
+    .attribution {
+        margin-top: 75em;
+    }
+}
+
+@media(max-width: 545px) {
+    .title-content h1 {
+        font-size: 30px;
+        max-width: 300px;
+        margin: 0 auto;
+        line-height: 35px;
+    }
+
+    .title-content p {
+        max-width: 320px;
+    }
+
+    .freeTest {
+        width: 329px;
+    }
+
+    .freeTest p {
+        width: 244px;
+    }
+
+    .card {
+        min-width: 329px;
+        min-height: 412px;
+        
+    }
+
+    #form {
+        padding: 1.6em;
+    }
+
+    #textCheck {
+        width: 300px;
+        text-align: center;
+    }
+   
+    input {
+        width: 250px;
+    }
+
+    .error-firstName img, .error-lastName img, .error-email img, .error-password img {
+        margin-left: 6em;
+    }
+
+    .error-firstName p, .error-lastName p, .error-email p, .error-password p {
+        margin-right: 0;
+    }
+
+    #lastName, #email, #password{
+        margin-top: 1em;
+    }
+
+    #btn {
+        width: 278px;
+    }
+
+    .terms {
+        width: 220px;
+        margin: auto;
+        margin-top: 1.3em;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+}

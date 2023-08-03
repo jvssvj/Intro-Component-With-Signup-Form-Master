@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --primary-color: hsl(0, 100%, 74%); 
+    --btn-color: hsl(154, 59%, 51%);
+    --free-test-color:hsl(248, 32%, 49%);
+    --placeholder-fontInputs-color:hsl(249, 10%, 26%);
+    --inputs-border-color:hsl(246, 25%, 77%);
+    --font: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    font-family: var(--font);
+    font-size: 16px;
+    background-image: url(../images/bg-intro-desktop.png);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px; 
+    
+    
+}
+
+.title-content {
+    margin-right: 5em;
+}
+
+.title-content h1 {
+    color: white;
+    font-size: 42px;
+    max-width: 500px;
+    line-height: 50px;
+}
+
+.title-content p {
+    margin-top: 2em;
+    color: white;
+    max-width: 500px;
+}
+
+.freeTest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 502px;
+    height: 57px;
+    background-color: var(--free-test-color);
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.295);
+    border-radius: 10px;
+}
+
+.freeTest p {
+    color: white;
+    text-align: center;
+}
+
+.freeTest span {
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.295);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 1.5em;
+    border-radius: 10px;
+    min-width: 502px;
+    min-height: 431px;
+}
+
+#form {
+    padding: 2.3em;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    border: 1px solid var(--inputs-border-color);
+    border-radius: 5px;
+    padding-left: 2em;
+}
+
+#lastName, #email, #password, #btn {
+    margin-top: 1.5em;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 600;
+    font-family: var(--font);
+}
+
+#btn {
+    background-color: var(--btn-color);
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px hsl(154, 100%, 34%);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 428px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: hsla(154, 59%, 51%, 0.555);
+    transition: all 0.2s ease;
+}
+
+#btn:active {
+    transform: scale(0.92);
+}
+
+.terms {
+    display: block;
+    color: var(--inputs-border-color);
+    font-size: 10px;
+    margin-top: 1.5em;
+}
+
+.terms a {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.attribution {
+    position: absolute;
+    text-align: center;
+    margin-top: 70em;
+    font-size: 13px;
+    color: white;
+    padding: 1em;
+}
+
+.attribution a {
+    color: var(--free-test-color);
+}
+
+::selection {
+    background-color: var(--free-test-color);
+}
+
+/* message that appears if everything is ok JS */
+#check {
+    display: none;
+    text-align: center;
+}
+
+#check img {
+    width: 100px;
+}
+
+#textCheck {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 1em;
+    color: var(--placeholder-fontInputs-color);
+}
+
+/*Error*/
+
+.error-firstName, .error-lastName, .error-email, .error-password {
+    display: none;
+}
+
+.error-firstName img, .error-lastName img, .error-email img {
+    position: absolute;
+    margin-top: -2.7em;
+    margin-left: 10.5em;
+}
+
+.error-firstName p, .error-lastName p, .error-email p {
+    color: var(--primary-color);
+    font-size: 11px;
+    margin-right: -24.6em;
+    font-style: italic;
+    margin-top: 3px;
+}
+
+/*error-password is separated because it is bigger than the other errors*/
+
+.error-password img {
+    position: absolute;
+    margin-top: -2.7em;
+    margin-left: 10.5em;
+}
+
+.error-password p {
+    color: var(--primary-color);
+    font-size: 11px;
+    margin-right: -20.2em;
+    font-style: italic;
+    margin-top: 3px;
+}
