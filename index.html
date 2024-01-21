@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="src/index.js" defer></script>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <a class="header__menu__button__snap" href="#">
+      <img src="images/logo.svg" alt="SNAP">
+    </a>
+
+    <nav class="header__menu__nav">
+      <div class="menu__features">
+
+        <div class="menu__features__button">
+          <button class="features__button menu--button--features--company">Features</button>
+          <img class="features__arrow" src="images/icon-arrow-down.svg" alt="">
+        </div>
+        
+        <ul class="features__modal">
+          <li class="features__todo-list features--options"><a href="#">Todo List</a></li>
+          <li class="features__calendar features--options"><a href="#">Calendar</a></li>
+          <li class="features__reminders features--options"><a href="#">Reminders</a></li>
+          <li class="features__planning features--options"><a href="#">Planning</a></li>
+        </ul>
+      </div>
+
+      <div class="menu__company">
+
+        <div class="menu__company__button">
+          <button class="company__button menu--button--features--company">Company</button>
+          <img class="company__arrow" src="images/icon-arrow-down.svg" alt="">
+        </div>
+        
+        <ul class="company__modal">
+          <li class="company__history company--options"><a href="#">History</a></li>
+          <li class="company__team company--options"><a href="#">Our Team</a></li>
+          <li class="company__blog company--options"><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+
+      <ul class="menu__carrers__about">
+        <li class="carrers__button"><a href="#">Carrers</a></li>
+        <li class="about__button"><a href="#">About</a></li>
+      </ul>
+
+      <div class="menu__buttons__access">
+        <button class="button__login">Login</button>
+        <button class="button__register">Register</button>
+      </div>
+    </nav>
+
+    <div class="header__menu__buttons__open__close__mobile">
+      <button class="mobile--open--menu">
+        <img src="images/icon-menu.svg" alt="Open menu">
+      </button>
+      <button class="mobile--close--menu">
+        <img src="images/icon-close-menu.svg" alt="Close menu">
+      </button>
+    </div>
+
+  </header>
+  
+  <main class="remote__content">
+
+    <section class="remote__content__infos">
+      <div class="remote__content__txt">
+        <h1 class="remote__content__txt__title">Make remote work</h1>
+        <p class="remote__content__txt__paragraph">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="learn__button">Learn more</button>
+      </div>
+
+      <ul class="remote__content__collaborations">
+        <li class="collaborations__items"><a href="#"><img src="images/client-databiz.svg" alt="Databiz logo"></a></li>
+        <li class="collaborations__items"><a href="#"><img src="images/client-audiophile.svg" alt="Audiophile logo"></a></li>
+        <li class="collaborations__items"><a href="#"><img src="images/client-meet.svg" alt="Meet logo"></a></li>
+        <li class="collaborations__items"><a href="#"><img src="images/client-maker.svg" alt="Maker logo"></a></li>
+      </ul>
+    </section>
+
+    <picture class="remote__picture">
+      <source class="remote__picture" media="(max-width: 1160px)" srcset="images/image-hero-mobile.png">
+      <img class="remote__picture" src="images/image-hero-desktop.png" alt="">
+    </picture>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-62b518263/" target="_blank">João Vitor</a>
+</footer>
+</body>
+</html>
